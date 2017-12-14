@@ -2,14 +2,21 @@
 
 dockerized python crypto app
 
-# build
+# run mysql
+
+```
+docker run -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql  
+```
+
+
+# build cryptoz
 
 ```
 docker build --tag erangaeb/cryptoz:0.1 .  
 docker build --tag erangaeb/cryptoz:0.1 . --no-cache  
 ```
 
-# run
+# run cryptoz
 
 ```
 # without env variable 
