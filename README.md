@@ -5,7 +5,11 @@ dockerized python crypto app
 # run mysql
 
 ```
+# without volume mapping
 docker run -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql  
+
+# with volume mapping
+docker run -e MYSQL_ROOT_PASSWORD=root -v /private/var/services/mysql:/var/lib/mysql -p 3306:3306 -d mysql  
 ```
 
 
