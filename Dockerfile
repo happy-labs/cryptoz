@@ -9,6 +9,9 @@ RUN apt-get install -y build-essential
 RUN apt-get install -y python python-pip python-dev python-setuptools
 RUN apt-get install -y libmysqlclient-dev
 
+# python mysql
+RUN pip install mysql-python
+
 # copy app
 ADD . /app
 WORKDIR /app
