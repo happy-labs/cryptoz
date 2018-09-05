@@ -11,7 +11,7 @@ if __name__ == "__main__":
         save it on db
     """
     #read db host via env variable
-    DB_HOST = os.getenv("DB_HOST", "10.2.2.1")
+    DB_HOST = os.getenv("DB_HOST", "localhost")
 
     # connect to db
     db = MySQLdb.connect(host=DB_HOST,

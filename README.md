@@ -27,7 +27,7 @@ docker build --tag erangaeb/cryptoz:0.1 . --no-cache
 docker run -it -a stdin -a stdout erangaeb/cryptoz:0.1
 
 # with env variable
-docker run -it -a stdin -a stdout -e DB_HOST=10.2.2.1 erangaeb/cryptoz:0.1  
+docker run -it -a stdin -a stdout -e DB_HOST=10.4.1.70 erangaeb/cryptoz:0.1
 ```
 
 # instruction
