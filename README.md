@@ -12,6 +12,16 @@ docker run -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:8.0.0
 docker run -e MYSQL_ROOT_PASSWORD=root -v /private/var/services/mysql:/var/lib/mysql -p 3306:3306 -d mysql:8.0.0
 ```
 
+# connect mysql
+
+```
+# connect
+mysql -u root -p -h dev.localhost
+
+# create databases
+create database cryptoz
+```
+
 
 # build cryptoz
 
@@ -32,10 +42,10 @@ docker run -it -a stdin -a stdout -e DB_HOST=10.4.1.70 erangaeb/cryptoz:0.1
 
 # instruction
 ```
-1. docker inspect 
-2. env variables  
-3. remove database container  
-4. volume mapping mysql data  
-5. multi container links   
-6. docker compose  
+1. docker inspect
+2. env variables
+3. remove database container
+4. volume mapping mysql data
+5. multi container links
+6. docker compose
 ```

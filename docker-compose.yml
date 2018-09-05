@@ -1,0 +1,14 @@
+mysql:
+    image: mysql:8.0.0
+    container_name: mysql
+    ports:
+        - 3306:3306
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+
+
+cryptoz:
+    image: erangaeb/cryptoz:0.1
+    container_name: cryptoz
+    environment:
+        - DB_HOST=10.4.1.70
